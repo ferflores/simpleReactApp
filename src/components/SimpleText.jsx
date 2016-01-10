@@ -2,7 +2,7 @@ import React from 'react';
 
 class SimpleText extends React.Component {
   render(){
-    return (<h1> My simple text </h1>);
+    return (<h1> Inner component </h1>);
   }
 }
 
