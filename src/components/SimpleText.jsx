@@ -6,4 +6,4 @@ class SimpleText extends React.Component {
   }
 }
 
-export default Simpletext;
+export default SimpleText;
