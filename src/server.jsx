@@ -11,11 +11,13 @@ app.use(morgan('dev'));
 app.set('views',__dirname + '/../src/views');
 app.set('view engine', 'jade');
 
+
 app.listen('3000', () => {
   console.log('server listening on 3000...')
 });
 
 app.get('/*', (req, res) => {
   //let content = ReactDomServer.renderToString(< Home />);
+  //console.log(content);
   res.render('index', {content: ''});
 });
