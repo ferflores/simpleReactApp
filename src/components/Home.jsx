@@ -5,9 +5,16 @@ import { Link } from 'react-router';
 class Home extends React.Component {
   render(){
     return (
-      <div>Main compontent!
-        <Link to='/login'>test</Link>
-        <Link to='/comments'>comments</Link> 
+      <div>
+        <h1>Main compontent!</h1>
+        <ul>
+          <li>
+            <Link to='/test'>test</Link>
+          </li>
+          <li>
+            <Link to='/comments'>comments</Link>
+          </li>
+        </ul>
         {this.props.children}
       </div>
     );
