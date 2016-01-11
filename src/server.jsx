@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import React from 'react';
-import Home from './components/Home';
+//import Home from './components/Home';
 import ReactDomServer from 'react-dom/server';
 
 var app = express();
@@ -16,6 +16,6 @@ app.listen('3000', () => {
 });
 
 app.get('/*', (req, res) => {
-  let content = ReactDomServer.renderToString(< Home />);
+  //let content = ReactDomServer.renderToString(< Home />);
   res.render('index', {content: ''});
 });

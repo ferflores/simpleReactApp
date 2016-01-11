@@ -4,7 +4,13 @@ import { Link } from 'react-router';
 
 class Home extends React.Component {
   render(){
-    return (<div>Main compontent! <Link to='/login'>test</Link> {this.props.children} </div>);
+    return (
+      <div>Main compontent!
+        <Link to='/login'>test</Link>
+        <Link to='/comments'>comments</Link> 
+        {this.props.children}
+      </div>
+    );
   }
 }
 
