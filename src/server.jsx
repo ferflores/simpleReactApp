@@ -17,5 +17,5 @@ app.listen('3000', () => {
 
 app.get('/*', (req, res) => {
   let content = ReactDomServer.renderToString(< Home />);
-  res.render('index', {content: content});
+  res.render('index', {content: ''});
 });
